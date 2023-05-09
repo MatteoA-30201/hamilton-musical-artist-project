@@ -1,0 +1,131 @@
+#logo img {
+  width:80px;
+  height: 80px;
+}
+
+.topnav-container {
+display: flex;
+flex-flow: row nowrap;
+}
+
+@media (min-width: 1000px) {
+
+ .heading-size-change {
+  font-size: 30px;
+}
+}
+
+@media (min-width: 790.98px) {
+
+.heading-size-change {
+  font-size: 20px;
+}
+}
+
+@media (max-width: 790.98px) {
+
+.heading-size-change {
+  font-size: 15px;
+}
+#logo img {
+  width: 70px;
+  height: 70px;
+}
+}
+
+@media (max-width: 662px) {
+.topnav-container {
+  width: 100%;
+  justify-content: flex-start;
+}
+.heading-size-change {
+  font-size: 14px;
+}
+#logo img {
+  width: 70px;
+  height: 70px;
+}
+#logo-container {
+  padding-right: 0%;
+}
+}
+
+@media (min-width: 662px) {
+#logo-container {
+    padding-right: 10%;
+}
+.topnav {
+  justify-content: center;
+  width: 80%;
+}
+}
+
+.topnav {
+  overflow: hidden;
+  height: 120px;
+  display: flex;
+  flex-flow: row nowrap;
+  padding-bottom: 40px;
+  width: 100%;
+  top: 0;
+  margin-top: 10px;
+
+}
+
+.topnav a {
+  float: left;
+  color: #6E838A;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-weight: 20px;
+  display: block;
+}
+
+.skeuomorphic-buttons-navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%; 
+  font-family: 'Montserrat', sans-serif;
+  height: 100px;
+  background-color: black;
+  outline-offset: 1px;
+  border: 2px outset #2a3a45;
+  margin-top: 10px;
+}
+
+.skeuomorphic-buttons-navbar a.skeuomorphic-buttons {
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  align-items: center;
+}
+
+.skeuomorphic-buttons:hover {
+  cursor: pointer;
+  text-decoration: underline #2a3a45;
+}
+
+.skeuomorphic-buttons-navbar:active {
+  background-color: #2a3a45;
+  color: #6E838A;
+  border: 2px outset #6E838A;
+  text-decoration: underline #6E838A;
+}
+
+.container-xl {
+border-radius: 20px;
+margin-top: 10px;
+background-color: #bbe4ec;
+border: #2a3a45 ridge 10px;
+}
+
+.top-row {
+margin-top: 25px;
+margin-bottom: 80px;
+background-color: 6e838a;
+font-size: 70px;
+font-weight: 700;
+font-family: 'Montserrat', sans-serif;
+}
