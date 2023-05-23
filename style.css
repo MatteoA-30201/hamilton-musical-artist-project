@@ -1,11 +1,53 @@
+body {
+  background-color: #E7DA8C;
+}
+
+.doodle-background {
+  position: absoulte;
+}
+
+.homepage-position {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.homepage-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-logo {
+  width: 800px;
+  height: 800px;
+}
+
+.homepage-box-container {
+  border: #0c0c0c solid 2px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(165, 124, 0, 0.5);
+}
+
 #logo img {
-  width:80px;
-  height: 80px;
+  width: 90px;
+  height: 89.96px;
+}
+
+#logo-container {
+  background-color: #bda729;
+  border: #0c0c0c outset 2px;
+  border-radius: 20px;
+  width: 120px;
+  height: 112px;
 }
 
 .topnav-container {
-display: flex;
-flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 25px;
 }
 
 @media (min-width: 1000px) {
@@ -28,8 +70,8 @@ flex-flow: row nowrap;
   font-size: 15px;
 }
 #logo img {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 }
 
@@ -42,21 +84,24 @@ flex-flow: row nowrap;
   font-size: 14px;
 }
 #logo img {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
 }
 #logo-container {
-  padding-right: 0%;
+  margin-right: 10%;
 }
 }
 
 @media (min-width: 662px) {
 #logo-container {
-    padding-right: 10%;
+    margin-right: 10%;
 }
 .topnav {
   justify-content: center;
   width: 80%;
+}
+.topnav-container {
+  justify-content: flex-start;
 }
 }
 
@@ -74,7 +119,7 @@ flex-flow: row nowrap;
 
 .topnav a {
   float: left;
-  color: #6E838A;
+  color: #0c0c0c;
   text-align: center;
   padding: 10px 10px;
   text-decoration: none;
@@ -89,9 +134,9 @@ flex-flow: row nowrap;
   width: 100%; 
   font-family: 'Montserrat', sans-serif;
   height: 100px;
-  background-color: black;
+  background-color: #a57c00;
   outline-offset: 1px;
-  border: 2px outset #2a3a45;
+  border: 3px inset #bda729;
   margin-top: 10px;
 }
 
@@ -104,27 +149,27 @@ flex-flow: row nowrap;
 
 .skeuomorphic-buttons:hover {
   cursor: pointer;
-  text-decoration: underline #2a3a45;
+  text-decoration: underline #bda729;
 }
 
 .skeuomorphic-buttons-navbar:active {
-  background-color: #2a3a45;
-  color: #6E838A;
-  border: 2px outset #6E838A;
-  text-decoration: underline #6E838A;
+  background-color: #bda729;
+  color: #0c0c0c;
+  border: 3px outset #0c0c0c;
+  text-decoration: underline #0c0c0c;
 }
 
 .container-xl {
 border-radius: 20px;
 margin-top: 10px;
-background-color: #bbe4ec;
-border: #2a3a45 ridge 10px;
+background-color: #e9d667;
+border: #bda729 ridge 10px;
 }
 
 .top-row {
 margin-top: 25px;
 margin-bottom: 80px;
-background-color: 6e838a;
+background-color: #0c0c0c;
 font-size: 70px;
 font-weight: 700;
 font-family: 'Montserrat', sans-serif;

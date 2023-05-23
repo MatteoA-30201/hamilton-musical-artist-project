@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hamilton Musical Artist Project</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="preconn+ect" href="https://fonts.googleapis.com">
@@ -21,43 +21,153 @@
       <div class="topnav col col-xl-12 col-lg-12 col-xxl-12" id="navbar">
         <div id="logo-container">
           <a id="logo" href="index.html">
-            <img src="Photos/MA.png">
+            <img src="Photos\Hamilton-Logo.png">
           </a>
         </div>
         <div class="skeuomorphic-buttons-navbar " id="-container">
-          <a class="skeuomorphic-buttons" href="#">
-            
+          <a class="skeuomorphic-buttons" href="#Homepage">
+            HOMEPAGE
           </a>
         </div>
         <div class="skeuomorphic-buttons-navbar" id="-container">
-          <a class="skeuomorphic-buttons" href="#">
-            
+          <a class="skeuomorphic-buttons" href="#Discography">
+            DISCOGRAPHY
           </a>
         </div>
         <div class="skeuomorphic-buttons-navbar" id="-container">
-          <a class="skeuomorphic-buttons" href="#">
-            
+          <a class="skeuomorphic-buttons" href="#Performances">
+            PERFORMANCES
           </a>
         </div>
         <div class="skeuomorphic-buttons-navbar" id="-container">
-          <a class="skeuomorphic-buttons" href="#">
-            
-          </a>
-        </div>
-        <div class="skeuomorphic-buttons-navbar" id="-container">
-          <a class="skeuomorphic-buttons" href="#">
-            
+          <a class="skeuomorphic-buttons" href="#Merchandise">
+            MERCHANDISE
           </a>
         </div>
       </div>
     </div>
   </div>
 
+  <div class="container-fluid"> 
+    <div class="homepage-position row" id="Homepage">
+      <div class="about-the-show-container homepage-flexbox-container col col-4">
+        <div class="about-the-show-box-container homepage-box-container">
+          <div class="about-title">
+            <h1>About the Show</h1>
+          </div>
+          <div class="about-the-show">
+            
+          </div>
+        </div>
+      </div>
+      <div class="homepage-logo-container col col-4">
+          <img class="homepage-logo" src="Photos\Hamilton-Logo.png">
+      </div>
+      <div class="cast-container homepage-flexbox-container col-4">
+        <div class="cast-box-container homepage-box-container">
+          <div class="cast-title">
+            <h1>The Cast</h1>
+          </div>
+          <div class="cast">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <css-doodle class="doodle-background" grid="25">   
+      :doodle {
+        width: 100vmax; 
+        height: 100vmax;
+      }
+
+      @random {
+        border-top: .15em solid #bda729;
+        transition: .8s @r(.12s);
+      }
+
+      @random {
+        border-left: .15em solid #0c0c0c;
+        transition: .8s @r(.12s);
+      }
+
+
+      @random(.1) {
+        background: linear-gradient(@p(#bda729, #0c0c0c, #a57c00), @lp)
+        55% / @r(60%) @lr
+        no-repeat;
+        transition: .4s @r(.8s);
+      }
+      @random {
+        filter: drop-shadow(0 0 10px #e9d667)
+        transition: .8s @r(.12s);
+      }        
+      @random {
+        filter: drop-shadow(0 0 10px #e9d667);
+        transition: .8s @r(.12s);
+      }
+      @random {
+        filter: drop-shadow(0 0 10px #a57c00);
+        transition: .8s @r(.12s);
+      }
+      @random {
+        filter: drop-shadow(0 0 10px #0c0c0c);
+        transition: .8s @r(.12s);
+      }
+
+      @random(.04) {
+        clip-path: @shape(star);
+        background: @p(#a57c00, #0c0c0c, #bda729)
+          50% / @r(60%);
+        background-repeat: no-repeat;
+        transition: .4s @r(.8s);
+        transform:
+          scale(@r(.2, .7));
+      }
+      
+      @random(.03) {
+        clip-path: @shape(hypocycloid 3);
+        background: @p(#a57c00, #0c0c0c, #bda729)
+          50% / @r(60%);
+        background-repeat: no-repeat;
+        transition: .4s @r(.8s);
+        transform:
+          scale(@r(.2, .7));
+      }
+
+      @random(.03) {
+        clip-path: @shape(star);
+        background: @p(#a57c00, #0c0c0c, #bda729)
+          50% / @r(60%);
+        background-repeat: no-repeat;
+        transition: .4s @r(.8s);
+        transform:
+          scale(@r(.2, .7));
+      }
+
+      @random(.04) {
+        clip-path: polygon(@pick(
+          '0 0, 100% 0, 100% 100%',
+          '0 0, 100% 0, 0 100%',
+          '0 0, 100% 100%, 0 100%',
+          '100% 0, 100% 100%, 0 100%'
+        ));
+        background: @p(#a57c00, #0c0c0c, #bda729)
+          50% / @r(60%);
+        background-repeat: no-repeat;
+        transition: .4s @r(.8s);
+        transform:
+          scale(@r(.2, .7));
+      }
+    </css-doodle>
+  </div>
+
+
+    
+  
 
 
 
-
-
+  <script src="https://unpkg.com/css-doodle@0.34.9/css-doodle.min.js"></script>
 
   <script>
     AOS.init();
