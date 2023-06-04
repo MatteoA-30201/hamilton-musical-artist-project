@@ -7,11 +7,28 @@ body {
 }
 
 .doodle-background {
-  position: absoulte;
+  position: absolute;
 }
 
 .homepage-position {
   position: absolute;
+  padding-top: 150px;
+  z-index: 10;
+  width: 100%;
+}
+
+.merchandise-position {
+  margin-top: 1600px;
+  position: absolute;
+  padding-top: 150px;
+  z-index: 10;
+  width: 100%;
+}
+
+.performances-position {
+  margin-top: 1900px;
+  position: absolute;
+  padding-top: 150px;
   z-index: 10;
   width: 100%;
 }
@@ -40,7 +57,7 @@ body {
 
 }
 
-@media (max-width: 1125px) {
+@media (max-width: 1260px) {
 
   .homepage-logo {
     width: 450px;
@@ -49,7 +66,7 @@ body {
 
 }
 
-@media (min-width: 1125px) {
+@media (min-width: 1260px) {
 
   .homepage-logo {
     width: 600px;
@@ -73,8 +90,65 @@ body {
   margin-right: 20px;
 }
 
+.merchandise-box-container {
+  border: #0c0c0c solid 2px;
+  border-radius: 10px;
+  background-color: rgba(165, 124, 0, 0.6);
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.performances-box-container {
+  border: #0c0c0c solid 2px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.merch-item-container {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.merch-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch-img {
+  width: 200px;
+  height: 200px;
+  border: #0c0c0c solid 2px;
+  border-radius: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.merch-description {
+  margin-top: -17px;
+  font-size: 12px;
+}
+
+.merch {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
+.merch-row {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+}
+
 .about-the-show-box-container {
-  margin-top: 150px;
   text-align: center;
   font-weight: 400;
 }
@@ -123,33 +197,41 @@ body {
   display: flex;
 }
 
-.cast-member-container p {
-  font-size: 12.5px;
-  line-height: 15px;
-  text-align: center;
-}
-
 .cast-character {
   margin-top: -17px;
 }
 
 #logo img {
-  width: 90px;
-  height: 89.96px;
+  width: 70px;
+  height: 69.96px;
 }
 
-#logo-container {
+#logo {
   background-color: #bda729;
   border: #0c0c0c outset 2px;
   border-radius: 20px;
-  width: 120px;
-  height: 112px;
 }
 
-.topnav-container {
-  display: flex;
-  flex-flow: row nowrap;
-  margin-bottom: 25px;
+@media (max-width: 992px) {
+  .doodle-background {
+    display: none;
+  }
+
+  .homepage-position {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+  }
+}
+
+.navbar-toggler {
+  background-color: #bda729;
+  margin-top: 10px;
+}
+
+.navbar-toggler-icon {
+  width: 60px;
+  height: 60px;
 }
 
 @media (min-width: 992px) {
@@ -157,25 +239,30 @@ body {
     width: 51.4px;
     height: 68.6px;
     border: #0c0c0c solid 2px;
-    border-radius: 10px;
   }
 
+  .merchandise-position {
+    margin-top: 700px;
+  }
+
+  .flexbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cast-member-container p {
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 1000px) {
 
-  #logo img {
-    width: 60px;
-    height: 60px;
-  }
-
-  #logo-container {
+  #logo {
     background-color: #bda729;
     border: #0c0c0c outset 2px;
-    border-radius: 15px;
-    width: 80px;
-    height: 74.6px;
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,85 +274,88 @@ body {
     margin-top: 75px;
   }
 
+  body {
+    background-image: url("Photos/hamiltonbackground.png");
+    background-repeat: no-repeat;
+  }
+
+  .performances-position {
+    margin-top: 2700px;
+    position: absolute;
+    padding-top: 150px;
+    z-index: 10;
+    width: 100%;
+  }
+
+  .cast-member-container p {
+    font-size: 12.5px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+  .merch-img {
+    width: 100px;
+    height: 100px;
+    border: #0c0c0c solid 2px;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+  }
+
   .about-the-show-box-container {
     margin-bottom: 75px;
     margin-top: 60px;
   }
 }
 
-@media (max-width: 800px) {
-  .topnav-container {
-    width: 100%;
-  }
-
-  .heading-size-change {
-    font-size: 12px;
-  }
-
-  #logo img {
-    width: 45px;
-    height: 45px;
-  }
-
-  #logo-container {
+@media (max-width: 870px) {
+  #logo {
     margin-right: 2%;
     background-color: #bda729;
     border: #0c0c0c outset 2px;
-    border-radius: 12px;
-    width: 60px;
-    height: 56px;
-    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
 }
 
-@media (min-width: 800px) {
-
-  #logo img {
-    width: 60px;
-    height: 60px;
-  }
-
-  #logo-container {
-    margin-right: 5%;
+@media (min-width: 870px) {
+  #logo {
     background-color: #bda729;
     border: #0c0c0c outset 2px;
-    border-radius: 20px;
-    width: 80px;
-    height: 74.6px;
-    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .navbar-nav {
+    width: max(1600px, calc(70% + 100px));
+    margin-left: 10%;
   }
 
   .heading-size-change {
     font-size: 20px;
   }
+}
 
-  .topnav {
-    justify-content: center;
-    width: 80%;
+@media (min-width: 768px) {
+  #navbar-container {
+    display: flex;
+    justify-content: flex-end;
   }
+}
 
-  .topnav-container {
-    justify-content: flex-start;
+@media (max-width: 768px) {
+  #logo {
+    margin-top: 10px;
   }
 }
 
 .topnav {
-  overflow: hidden;
-  height: 120px;
   display: flex;
   flex-flow: row nowrap;
-  padding-bottom: 40px;
-  width: 100%;
-  top: 0;
-  margin-top: 10px;
-
+  padding-bottom: 10px;
+  justify-content: flex-end;
 }
 
 .topnav a {
@@ -310,18 +400,7 @@ body {
   text-decoration: underline #0c0c0c;
 }
 
-.container-xl {
-  border-radius: 20px;
-  margin-top: 10px;
+.topnav {
   background-color: #e9d667;
-  border: #bda729 ridge 10px;
-}
-
-.top-row {
-  margin-top: 25px;
-  margin-bottom: 80px;
-  background-color: #0c0c0c;
-  font-size: 70px;
-  font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  border: #bda729 solid 2px;
 }

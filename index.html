@@ -18,41 +18,44 @@
 </head>
 
 <body>
-  <div class="container-fluid">
-    <div class="topnav-container row">
-      <div class="topnav col col-xl-12 col-lg-12 col-xxl-12" id="navbar">
-        <div id="logo-container">
-          <a id="logo" href="index.html">
-            <img src="Photos\Hamilton-Logo.png">
-          </a>
-        </div>
-        <div class="skeuomorphic-buttons-navbar " id="homepage-container">
-          <a class="skeuomorphic-buttons heading-size-change" href="#Homepage">
-            HOMEPAGE
-          </a>
-        </div>
-        <div class="skeuomorphic-buttons-navbar" id="discography-container">
-          <a class="skeuomorphic-buttons heading-size-change" href="#Discography">
-            DISCOGRAPHY
-          </a>
-        </div>
-        <div class="skeuomorphic-buttons-navbar" id="performances-container">
-          <a class="skeuomorphic-buttons heading-size-change" href="#Performances">
-            PERFORMANCES
-          </a>
-        </div>
-        <div class="skeuomorphic-buttons-navbar" id="merchandise-container">
-          <a class="skeuomorphic-buttons heading-size-change" href="#Merchandise">
-            MERCHANDISE
-          </a>
-        </div>
+  <nav class="navbar pt-0 fixed-top navbar-expand-md">
+    <div class="topnav container-fluid">
+      <a class="navbar-brand" id="logo" href="index.html">
+        <img src="Photos\Hamilton-Logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-container"
+        aria-controls="#navbar-container" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-container">
+        <ul class="navbar-nav">
+          <li class="skeuomorphic-buttons-navbar " id="homepage-container">
+            <a class="skeuomorphic-buttons heading-size-change" href="#Homepage">
+              HOMEPAGE
+            </a>
+          </li>
+          <li class="skeuomorphic-buttons-navbar" id="discography-container">
+            <a class="skeuomorphic-buttons heading-size-change" href="#Discography">
+              DISCOGRAPHY
+            </a>
+          </li>
+          <li class="skeuomorphic-buttons-navbar" id="performances-container">
+            <a class="skeuomorphic-buttons heading-size-change" href="#Performances">
+              PERFORMANCES
+            </a>
+          </li>
+          <li class="skeuomorphic-buttons-navbar" id="merchandise-container">
+            <a class="skeuomorphic-buttons heading-size-change" href="#Merchandise">
+              MERCHANDISE
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-
+  </nav>
   <div class="container-fluid">
-    <div class="homepage-position row" id="Homepage">
-      <div class="about-the-show-container homepage-flexbox-container col col-lg-4 col-12">
+    <div class="homepage-position div-position row" id="Homepage">
+      <div class="about-the-show-container flexbox-container col col-lg-4 col-12">
         <div class="about-the-show-box-container homepage-box-container">
           <div class="homepage-titles about-title">
             <h1>ABOUT THE SHOW</h1>
@@ -69,7 +72,7 @@
       <div class="homepage-logo-container col col-lg-4 col-12">
         <img class="homepage-logo" src="Photos\Hamilton-Logo.png">
       </div>
-      <div class="cast-container homepage-flexbox-container col col-lg-4 col-12">
+      <div class="cast-container flexbox-container col col-lg-4 col-12">
         <div class="cast-box-container homepage-box-container">
           <div class="homepage-titles cast-title">
             <h1>THE CAST</h1>
@@ -184,11 +187,10 @@
         </div>
       </div>
     </div>
-
-    <css-doodle class="doodle-background" grid="45">
+    <css-doodle class="doodle-background" grid="25x4000">
       :doodle {
-      width: 200vmax;
-      height: 200vmax;
+      width: 100%;
+      height: 450%;
       }
 
       @random {
@@ -271,9 +273,130 @@
       }
     </css-doodle>
   </div>
-
-
-
+  <div class="container-fluid">
+    <div class="merchandise-position div-position row" id="Merchandise">
+      <div class="flexbox-container col">
+        <div class="merchandise-box-container">
+          <div class="homepage-titles merch-title">
+            <h1>MERCHANDISE</h1>
+          </div>
+          <div class="merch">
+            <div class="row merch-row r1">
+              <div class="col col-4 merch-item-container">
+                <div class="merch-img-container">
+                  <img src="Photos/HAMILTON371A_96329ba4-af96-4851-adaa-281b3e7bbc3d.jpg" class="merch-img">
+                </div>
+                <button type="button" class="text-reset mb-1 mt-2 btn btn-warning btn-sm">Add to Cart</button>
+                <strong>
+                  <p class="merch-title">HAMILTON Quill Keychain</p>
+                </strong>
+                <p class="merch-description">$15 USD - Metal keychain Feather
+                </p>
+              </div>
+              <div class="col col-4 merch-item-container">
+                <div class="merch-img-container">
+                  <img src="Photos/ham385_b607b1e5-e1a3-460d-a410-daadc965d770.jpg" class="merch-img">
+                </div>
+                <button type="button" class="text-reset mb-1 mt-2 btn btn-warning btn-sm">Add to Cart</button>
+                <strong>
+                  <p class="merch-title">HAMILTON Quill Pen</p>
+                </strong>
+                <p class="merch-description">$15 USD - Material: Turkey Feather Ball Point Pen</p>
+              </div>
+              <div class="col col-4 merch-item-container">
+                <div class="merch-img-container">
+                  <img src="Photos/hamilton-cast-recording_4d73c413-8941-4fa0-85db-d1d2175fd232.jpg" class="merch-img">
+                </div>
+                <button type="button" class="text-reset mb-1 mt-2 btn btn-warning btn-sm">Add to Cart</button>
+                <strong>
+                  <p class="merch-title">HAMILTON Broadway Cast CD</p>
+                </strong>
+                <p class="merch-description">$35 USD - 2 Discs features Original Broadway cast 46 tracks</p>
+              </div>
+            </div>
+            <div class="row merch-row r2">
+              <div class="col col-4 merch-item-container">
+                <div class="merch-img-container">
+                  <img src="Photos/hamilton-button-set.jpg" class="merch-img">
+                </div>
+                <button type="button" class="text-reset mb-1 mt-2 btn btn-warning btn-sm">Add to Cart</button>
+                <strong>
+                  <p class="merch-title">HAMILTON Button Set
+                  </p>
+                </strong>
+                <p class="merch-description">$15 USD - 6 Black and Gold button set sturdy pin back closure and Mylar
+                  covering.</p>
+              </div>
+              <div class="col col-4 merch-item-container">
+                <div class="merch-img-container">
+                  <img src="Photos/HAM_shotglass-back.jpg" class="merch-img">
+                </div>
+                <button type="button" class="text-reset mb-1 mt-2 btn btn-warning btn-sm">Add to Cart</button>
+                <strong>
+                  <p class="merch-title">HAMILTON Shot Glass</p>
+                </strong>
+                <p class="merch-description">$15 USD - Black decal 1.5oz <br>Material: Glass</p>
+              </div>
+              <div class="col col-4 merch-item-container">
+                <div class="merch-img-container">
+                  <img src="Photos/hamilton-post-cards.jpg" class="merch-img">
+                </div>
+                <button type="button" class="text-reset mb-1 mt-2 btn btn-warning btn-sm">Add to Cart</button>
+                <strong>
+                  <p class="merch-title">HAMILTON Postcard Set</p>
+                </strong>
+                <p class="merch-description">$10 USD - Set of 6 Gold and Black postcards.</p>
+              </div>
+            </div>
+            <div class="row merch-row r3">
+              <div class="col col-4 merch-item-container">
+                <div class="merch-img-container">
+                  <img src="Photos/hamilton-lapel-pin_d5405df7-7292-4e12-8ecd-a32d810d6445.jpg" class="merch-img">
+                </div>
+                <button type="button" class="text-reset mb-1 mt-2 btn btn-warning btn-sm">Add to Cart</button>
+                <strong>
+                  <p class="merch-title">HAMILTON Lapel Pin</p>
+                </strong>
+                <p class="merch-description">$10 USD - Gold star-shaped metal die-cut lapel pin</p>
+              </div>
+              <div class="col col-4 merch-item-container">
+                <div class="merch-img-container">
+                  <img src="Photos/hmi0006_66bbcbde-4258-4d8a-b8c2-cdccdcec7a79.jpg" class="merch-img">
+                </div>
+                <button type="button" class="text-reset mb-1 mt-2 btn btn-warning btn-sm">Add to Cart</button>
+                <strong>
+                  <p class="merch-title">HAMILTON Mixtape CD</p>
+                </strong>
+                <p class="merch-description">$20 USD - The Hamilton Mixtape is a collection of songs from the hit
+                  Broadway show covered and remixed by today's music all-stars.</p>
+              </div>
+              <div class="col col-4 merch-item-container">
+                <div class="merch-img-container">
+                  <img src="Photos/383_1_aee5f896-4b31-4863-92ce-90cb12906e8d.jpg" class="merch-img">
+                </div>
+                <button type="button" class="text-reset mb-1 mt-2 btn btn-warning btn-sm">Add to Cart</button>
+                <strong>
+                  <p class="merch-title">HAMILTON Umbrella</p>
+                </strong>
+                <p class="merch-description">$35 USD - Gold and Black show title umbrella</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="performances-position div-position row" id="Performances">
+      <div class="flexbox-container col">
+        <div class="performances-box-container">
+          <div class="homepage-titles performances-title">
+            <h1>PERFORMANCES</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
