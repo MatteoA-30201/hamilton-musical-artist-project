@@ -1,5 +1,7 @@
 body {
   background-color: #E7DA8C;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .about-the-show-paragraph {
@@ -18,7 +20,7 @@ body {
 }
 
 .merchandise-position {
-  margin-top: 1600px;
+  margin-top: 1700px;
   position: absolute;
   padding-top: 150px;
   z-index: 10;
@@ -26,7 +28,15 @@ body {
 }
 
 .performances-position {
-  margin-top: 1900px;
+  margin-top: 2000px;
+  position: absolute;
+  padding-top: 150px;
+  z-index: 10;
+  width: 100%;
+}
+
+.discography-position {
+  margin-top: 2900px;
   position: absolute;
   padding-top: 150px;
   z-index: 10;
@@ -73,6 +83,16 @@ body {
     height: 600px;
   }
 
+  .may-table {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 1475px) {
+
+  .may-table {
+    margin-bottom: 50px;
+  }
 }
 
 .homepage-titles {
@@ -82,7 +102,30 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.performances-title {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.performances-title h3 {
+  text-align: center;
+}
+
 .homepage-box-container {
+  border: #0c0c0c solid 2px;
+  border-radius: 10px;
+  background-color: rgba(165, 124, 0, 0.6);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.album-container {
+  margin-bottom: 20px;
+}
+
+.album-box-container {
   border: #0c0c0c solid 2px;
   border-radius: 10px;
   background-color: rgba(165, 124, 0, 0.6);
@@ -105,8 +148,47 @@ body {
   border-radius: 10px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(165, 124, 0, 0.6);
+}
+
+.performances {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+table,
+tr,
+td,
+th {
+  font-size: 15px;
+  border: #0c0c0c solid 3px;
+}
+
+table {
+  height: 100px;
+  border: #0c0c0c solid 3px;
+  border-radius: 20px;
+}
+
+.week th {
+  text-align: center;
   padding-left: 10px;
   padding-right: 10px;
+  font-size: 15px;
+}
+
+.month th {
+  font-size: 30px;
 }
 
 .merch-item-container {
@@ -258,6 +340,11 @@ body {
   }
 }
 
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 @media (max-width: 1000px) {
 
   #logo {
@@ -277,10 +364,27 @@ body {
   body {
     background-image: url("Photos/hamiltonbackground.png");
     background-repeat: no-repeat;
+    background-size: width(100%) height(8000px);
+  }
+
+  .container-fluid {
+    padding-left: 0px;
+  }
+
+  #logo {
+    margin-left: 5px;
   }
 
   .performances-position {
-    margin-top: 2700px;
+    margin-top: 3000px;
+    position: absolute;
+    padding-top: 150px;
+    z-index: 10;
+    width: 100%;
+  }
+
+  .discography-position {
+    margin-top: 3900px;
     position: absolute;
     padding-top: 150px;
     z-index: 10;
@@ -310,7 +414,7 @@ body {
 
 @media (max-width: 870px) {
   #logo {
-    margin-right: 2%;
+    margin-right: ;
     background-color: #bda729;
     border: #0c0c0c outset 2px;
     display: flex;
@@ -349,6 +453,37 @@ body {
   #logo {
     margin-top: 10px;
   }
+
+  table,
+  tr,
+  td,
+  th {
+    border: #0c0c0c solid 3px;
+  }
+
+  td {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  table {
+    height: 100px;
+    border: #0c0c0c solid 3px;
+    border-radius: 20px;
+  }
+
+  .week th {
+    text-align: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 8.5px;
+  }
+
+  .month th {
+    font-size: 15px;
+  }
+
+
 }
 
 .topnav {
